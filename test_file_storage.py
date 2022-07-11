@@ -56,15 +56,17 @@ class TestModels(unittest.TestCase):
         self.assertIsNotNone(FileStorage.save.__doc__)
         self.assertIsNotNone(FileStorage.reload.__doc__)
 
-    def test_fiel_storage_exist(self):
+    def test_file_storage_exist(self):
         """ Check if methods exists """
         self.assertTrue(hasattr(self.fisto, "all"))
         self.assertTrue(hasattr(self.fisto, "new"))
         self.assertTrue(hasattr(self.fisto, "save"))
         self.assertTrue(hasattr(self.fisto, "reload"))
+        
 
     def test_models_save(self):
         """ Check if the save function works """
+        print("all ok")
         self.my_model.name = "Obi"
         self.my_model.save()
         storage.reload()
@@ -73,6 +75,7 @@ class TestModels(unittest.TestCase):
         self.assertTrue(hasattr(self.my_model, 'save'))
         self.assertNotEqual(self.my_model.created_at,
                             self.my_model.updated_at)
+        
 
 if __name__ == '__main__':
     unittest.main()
