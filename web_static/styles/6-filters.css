@@ -1,0 +1,77 @@
+/* Outer container for filters box with dropdown */
+section.filters {
+	background: white;
+	border: 1px solid #DDDDDD;
+	border-radius: 4px;
+	height: 70px;
+	width: 100%;
+	position: relative;}
+
+/* Search Button */
+button {
+	background-color: #FF5A5F;
+	border: 0px;
+	border-radius: 4px;
+	text-align: center;
+	font-size: 18px;
+	color: #FFFFFF;
+	height: 48px;
+	width: 20%;
+	/* Clear any inherited or default position information, by placing the button at origin 0,0 */
+	position: absolute;
+	top: 0; bottom: 0; right: 0;
+	/* top margin auto, right margin 30 px, botton margin auto
+	(top auto + botton auto: vertically centered), left margin auto */
+	margin: auto 30px auto auto;}
+
+/* Search Button when the mouse is on the button */
+button:hover {
+	opacity: 90%;}
+
+/* Location filter and amenities filter containers */
+div.locations, div.amenities {
+	text-align: left;
+	height: 100%;
+	width: 25%;
+	position: relative;
+	float: left;}
+div.locations {
+	border-right: 1px solid #DDDDDD;}
+
+/* Location filter and amenities filter content */
+h3 {
+	font-weight: 600;
+	margin-left: 40px;
+	margin-bottom: 0px;}
+h4 {
+	font-weight: 400;
+	font-size: 14px;
+	margin-left: 40px;
+	margin-top: 0px;}
+
+/* dropdown container */
+ul.popover {
+	display: none;
+	background-color: #FAFAFA;
+	width: 100%;
+	border: 1px solid #DDDDDD;
+	border-radius: 4px;
+	margin: 0px;
+	padding: 0px;
+	padding-top: 15px;
+	padding-bottom: 25px;
+	z-index: 1;}
+
+/* Dropdown when the mouse is on the filter */
+div.locations:hover ul.popover, div.amenities:hover ul.popover {
+	display: block;}
+
+/* Clear default list style type of li tags */
+li {
+	list-style: none;}
+
+/* Dropdown content - First level of the list */
+h2 {
+	font-size: 16px;
+	margin-left: 20px;
+	margin-bottom: 0;}

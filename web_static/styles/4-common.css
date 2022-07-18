@@ -1,0 +1,15 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.container {
+	max-width: 1000px;
+	/*	top margin is 30px
+		right and left margin are auto (horizontally centered)
+		bottom margin is 0px */
+	margin: 30px auto 0px;
+	position: relative;
+}
